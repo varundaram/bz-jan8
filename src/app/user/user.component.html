@@ -1,0 +1,16 @@
+<table class="table table-striped table-dark">
+    <thead>
+      <tr>
+        <th bgcolor="#5f9ea0">Name</th>
+        <th bgcolor="#5f9ea0">City</th>
+        <th bgcolor="#5f9ea0">Company</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td>{{user.name}}</td>
+            <td>{{user.address.city}}</td>
+            <td>{{user.company.name}}</td>
+        </tr>
+    </tbody>
+  </table>
